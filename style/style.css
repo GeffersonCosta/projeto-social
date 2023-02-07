@@ -8,10 +8,15 @@ html, body{
 	height: 100vh;
 	width: 100vw;
 }
+::-webkit-scrollbar{
+ 		width: 0px;
+ 		height: 0px;
+ 	}
 body{
 	background: url("../imagens/fundo-madeira.jpg") no-repeat top center;
 	background-size: cover;
 	background-attachment:fixed;
+
 }
 main{
 	height: 100vh;
@@ -45,5 +50,14 @@ section#social  img{
 	margin:10px;
 	border-radius: 50%;
 	box-shadow: 2px 2px 5px rgba(0, 0, 0,0.400);
+	box-sizing: border-box;
 
+
+}
+
+section#social  img:hover{
+
+	border: 2px solid rgba(255, 255, 255, 0.650);
+	transform: translate(-3px, -3px);
+	transition: transform .3s;
 }
